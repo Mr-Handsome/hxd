@@ -26,6 +26,21 @@ $ git pull
 $ go install $(glide nv)
 ```
 
+#### Windows
+In Command-Prompt
+```
+cd %userprofile%\appdata\local
+rd \s \q \hxd
+rd \s \q \hxwallet
+cd %userprofile%\go\src\github.com\hybridnetwork\hxd
+git pull
+```
+In PowerShell
+```
+cd $home\go\src\github.com\hybridnetwork\hxd
+go install $(glide nv)
+```
+
 hxd is a Hx full node implementation written in Go (golang).
 
 This acts as a chain daemon for the Hx cryptocurrency.
